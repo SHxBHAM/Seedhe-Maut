@@ -1,0 +1,140 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #141414;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #ffffff3c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 7, 7);
+    left: 0;
+    top: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+    top: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    color: #ffffff7e;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+    color: #000000;
+}
+#center{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-between;
+    padding-bottom:  5vh;
+    border-bottom:1px #969696 solid;
+}
+#left a{
+    text-decoration: none;
+}
+#left h3 {
+    color: #969696;
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    transition: .3s ease-in-out;
+
+}
+#left h3:hover{
+    color:#DB1C1F;
+}
+
+#center h1 {
+    color: #969696;
+    font-size: 8vw;
+    text-align: right;
+    line-height: 7vw;
+    transition: .5s ease-in-out;
+    
+}
+#center h1:hover{
+    color: #DB1C1F;
+}
+video{
+    width: 100%;
+    padding-top: 4vh;
+}
