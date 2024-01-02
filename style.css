@@ -29,7 +29,6 @@ html, body {
 
 #main {
     position: relative;
-    z-index: 10;
 }
 
 #page1 {
@@ -46,7 +45,6 @@ nav {
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 100;
     justify-content: space-between;
 }
 
@@ -95,6 +93,7 @@ nav {
 
 #nav-part2 h4:hover a {
     color: #000000;
+    z-index: 9;
 }
 #center{
     width: 100%;
@@ -142,6 +141,7 @@ video{
     width: 100%;
     background-color: #141414;
     position: relative;
+    
 }
 .con{
     display: flex;
@@ -152,20 +152,20 @@ video{
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 .con h1{
     font-size: 20vh;
     color: #969696;
     transition: .5s;
-    cursor: pointer;
 
 }
 .circle{
-    background-color: red;
+    background-color: rgb(149, 149, 149);
     height: 5vh;
     width: 5vh;
     border-radius: 20px;
-    border: 2px #ff0004;
 }
 #moving-text{
     width: 100%;
@@ -215,4 +215,86 @@ video{
 }
 #video{
     cursor: pointer;
+}
+#about-creator{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#hero{
+    background: linear-gradient(red,rgb(88, 0, 0));
+    height: 500px;
+    width: 500px;
+    left: 25%;
+    top: 25%;
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    animation-name: jiggly;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 0;
+}
+#hero2{
+    background: linear-gradient(red,rgb(88, 0, 0));
+    height: 500px;
+    width: 500px;
+    left: 25%;
+    top: 45%;
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    animation-name: jiggly;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 0;
+}
+@keyframes jiggly {
+    from{
+        transform: rotate3d(0px,0px,0px);
+        transform: skew(-7deg);
+    }
+    to{
+        transform: rotate3d(100px,2000px,2000px);
+        scale: 1.04;
+    }
+}
+#about{
+    margin-top: 50vh;
+    color: #969696;
+    font-size: 6vh;
+    margin-bottom: 300px;
+    width: 50%;
+    line-height: 5vh;
+}
+.creator{
+    height: 100%;
+    width: 35%;
+    /* background-color: #DB1C1F; */
+}
+#imgco{
+    height: 70%;
+    width: 100%;
+}
+#imgco img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#imgco h6{
+    margin-top: 20px;
+    font-size: 2vh;
+    color: #969696;
+    text-align: center;
 }
