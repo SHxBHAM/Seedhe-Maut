@@ -1,8 +1,12 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
 let videocontainer = document.querySelector('.media')
-    let playbtn = document.querySelector('#play-btn')
-    let audioArray = ['./Seedhe Maut - _101_.mp3', "./Seedhe Maut - 'Nanchaku' ft MC STΔN LYRICS.mp3", "./Seedhe Maut - Khatta Flow  (Lyrics) ft. Kr$na  Lunch break (mixtape).mp3",]
-    let audioIndex = 0;
-    let audioPlaying = false;
+let playbtn = document.querySelector('#play-btn')
+let audioArray = ['./Seedhe Maut - _101_.mp3', "./Seedhe Maut - 'Nanchaku' ft MC STΔN LYRICS.mp3", "./Seedhe Maut - Khatta Flow  (Lyrics) ft. Kr$na  Lunch break (mixtape).mp3",]
+let audioIndex = 0;
+let audioPlaying = false;
     
     let playing;
 
