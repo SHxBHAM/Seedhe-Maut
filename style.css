@@ -28,7 +28,6 @@ html, body {
 }
 
 #main {
-    /* background-color: #000; */
     position: relative;
     z-index: 10;
 }
@@ -44,7 +43,6 @@ html, body {
 nav {
     padding: 2vw 0vw;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     position: relative;
@@ -100,7 +98,7 @@ nav {
 }
 #center{
     width: 100%;
-    height: 65vh;
+    height: 80vh;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -125,9 +123,9 @@ nav {
 
 #center h1 {
     color: #969696;
-    font-size: 8vw;
+    font-size: 10vw;
     text-align: right;
-    line-height: 7vw;
+    line-height: 8vw;
     transition: .5s ease-in-out;
     
 }
@@ -135,6 +133,86 @@ nav {
     color: #DB1C1F;
 }
 video{
+    margin-top: 20px;
     width: 100%;
-    padding-top: 4vh;
+    border-radius: 20px;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #141414;
+    position: relative;
+}
+.con{
+    display: flex;
+    width: 7000px;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.con h1{
+    font-size: 20vh;
+    color: #969696;
+    transition: .5s;
+    cursor: pointer;
+
+}
+.circle{
+    background-color: red;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 20px;
+    border: 2px #ff0004;
+}
+#moving-text{
+    width: 100%;
+    overflow: hidden;
+}
+@keyframes move {
+    from{
+        translate: 0%;
+    }
+    to{
+        translate: -77%;
+    }
+}
+.con h1:hover{
+    color: #DB1C1F;
+}
+
+#play-btn{
+    background-color: white;
+    position: fixed;
+    color: #DB1C1F;
+    padding: 20px 14px;
+    border-radius: 1000px;
+    scale: 0;
+    opacity: 0;
+    cursor: pointer;
+    mix-blend-mode: difference;
+    font-size: 10px;
+}
+#play-btn h1{
+    cursor: pointer;
+}
+
+#test{
+    background-color: #DB1C1F;
+    height: 5vh;
+    width: 5vw;
+    opacity: 1;
+    scale: 1;
+    cursor: pointer;
+}
+#audio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh 20vw;
+}
+#video{
+    cursor: pointer;
 }
