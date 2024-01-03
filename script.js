@@ -66,25 +66,21 @@ let bayaanbtn = document.querySelector('#bayaan-btn')
         });
     });
 
-    // lunchbreakbtn.addEventListener("click",function(){
-    //     lunchbreak.scrollIntoView({behavior:"smooth"})
-    // })
+    
     document.getElementById('lb-btn').addEventListener("click", function() {
         lunchbreak.scrollIntoView({ behavior: "smooth" });
     });
     
     document.getElementById('nayaab-btn').addEventListener("click", function() {
-        // Assuming "nayaab" is your target element
         nayaab.scrollIntoView({ behavior: "smooth" });
     });
     
     document.getElementById('n-btn').addEventListener("click", function() {
-        // Assuming "n" is your target element
         n.scrollIntoView({ behavior: "smooth" });
     });
     
     document.getElementById('bayaan-btn').addEventListener("click", function() {
-        // Assuming "bayaan" is your target element
+
         bayaan.scrollIntoView({ behavior: "smooth" });
     });
     
