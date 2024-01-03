@@ -64,6 +64,7 @@ nav {
     position: relative;
     font-size: 18px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #nav-part2 h4::after {
@@ -89,6 +90,7 @@ nav {
     text-decoration: none;
     position: relative;
     z-index: 9;
+    cursor: pointer;
 }
 
 #nav-part2 h4:hover a {
@@ -121,7 +123,7 @@ nav {
 }
 
 #center h1 {
-    color: #969696;
+    color: #DB1C1F;
     font-size: 10vw;
     text-align: right;
     line-height: 8vw;
@@ -129,7 +131,7 @@ nav {
     
 }
 #center h1:hover{
-    color: #DB1C1F;
+    color: #969696;
 }
 video{
     margin-top: 20px;
@@ -182,7 +184,6 @@ video{
 .con h1:hover{
     color: #DB1C1F;
 }
-
 #play-btn{
     background-color: white;
     position: fixed;
@@ -220,15 +221,18 @@ video{
     width: 100%;
     height: 100vh;
     position: relative;
-    z-index: 2;
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2vw;
 }
+#about-creator #about{
+    z-index: 2;
+} 
 
 #hero{
-    background: linear-gradient(red,rgb(88, 0, 0));
+    background: linear-gradient(rgb(255, 255, 255),#ffffff);
     height: 500px;
     width: 500px;
     left: 25%;
@@ -241,10 +245,11 @@ video{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    z-index: 0;
+    mix-blend-mode: difference;
+
 }
 #hero2{
-    background: linear-gradient(red,rgb(88, 0, 0));
+    background: linear-gradient(rgb(255, 255, 255),#ffffff);
     height: 500px;
     width: 500px;
     left: 25%;
@@ -257,7 +262,7 @@ video{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    z-index: 0;
+    mix-blend-mode: difference;
 }
 @keyframes jiggly {
     from{
@@ -271,11 +276,14 @@ video{
 }
 #about{
     margin-top: 50vh;
-    color: #969696;
+    color: #ffffff;
     font-size: 6vh;
     margin-bottom: 300px;
     width: 50%;
     line-height: 5vh;
+}
+#about h1{
+    z-index: 9;
 }
 .creator{
     height: 100%;
@@ -297,4 +305,129 @@ video{
     font-size: 2vh;
     color: #969696;
     text-align: center;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #DB1C1F;
+    padding: 20px;
+}
+#head{
+    height: 25vh;
+    border: 5px #141414 solid;
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin-bottom: 1vh;
+    color: #141414;
+    width: 100%;
+    transition: 0.5s ease-in ;
+}
+#small{
+    padding-left: 40px;
+    transition: 0.5s ease-in;
+}
+#big{
+    font-size: 12vh;
+    text-align: center;
+    transition: 0.5s ease-in;
+}
+#head:hover{
+    background-color: #141414;
+    color: #DB1C1F;
+}
+#head:hover #big{
+    font-size: 1vh;
+}
+#head:hover #small{
+    padding-top:30px ;
+    font-size: 12vh;
+    text-align: center;
+}
+.question{
+    margin-bottom: 1vh;
+    height: 15vh;
+    border: 2px #141414 solid;
+    background-color: #141414;
+    border-radius: 20px;
+    color: #DB1C1F;
+    padding: 0px 20px;
+    display: flex;
+    transition: 0.5s ease-in;
+}
+.ques{
+    font-size: 12vh;
+    transition: 0.5s ;
+}
+.ans{
+    font-weight: 100;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 2vh;
+    transition: 0.5s ;
+}
+.ans a{
+    text-decoration: none;
+    color: #DB1C1F;
+}
+.question:hover .ques{
+    font-weight: 100;
+    font-size: 2vh;
+    padding-top: 20px;
+}
+.question:hover .ans{
+    font-size: 12vh;
+    font-weight: 500;
+    padding-top: 2px;
+}
+.album-page{
+    background-color:#141414 ;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px #606060 solid;
+}
+.album-left{
+    width: 50vw;
+}
+#lunchbreak{
+    font-size: 20vh;
+    color: transparent;
+    background: linear-gradient(to right,#0066ff, rgb(0, 221, 255) );
+    -webkit-background-clip: text;
+}
+#nayaab{
+    font-size: 20vh;
+    color: transparent;
+    background: linear-gradient(to right,#74a0e1, rgb(0, 221, 255) );
+    -webkit-background-clip: text;
+}
+#n{
+    font-size: 20vh;
+    color: transparent;
+    background: linear-gradient(to right,#84ff00, rgb(127, 186, 0) );
+    -webkit-background-clip: text;
+}
+#bayaan{
+    font-size: 20vh;
+    color: transparent;
+    background: linear-gradient(to right,red,orangered );
+    -webkit-background-clip: text;
+}
+
+.album-left p{
+    font-size: 5vh;
+    color: #ffffff7e;
+    padding-top: 40px;
+}
+.album-right{
+    width: 90vh;
+    height: 95vh;
+    justify-content: center;
+}
+.album-right iframe{
+    padding-top: 40px;
+
 }

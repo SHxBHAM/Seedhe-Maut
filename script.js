@@ -1,12 +1,17 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+
 let videocontainer = document.querySelector('.media')
 let playbtn = document.querySelector('#play-btn')
-let audioArray = ['./Seedhe Maut - _101_.mp3', "./Seedhe Maut - 'Nanchaku' ft MC STΔN LYRICS.mp3", "./Seedhe Maut - Khatta Flow  (Lyrics) ft. Kr$na  Lunch break (mixtape).mp3",]
+let audioArray = ['./Seedhe Maut - _101_.mp3', "./Seedhe Maut - 'Nanchaku' ft MC STΔN LYRICS.mp3", "./Seedhe Maut - Khatta Flow  (Lyrics) ft. Kr$na  Lunch break (mixtape).mp3","./Seedhe Maut x Foreign Beggars x Sez On The Beat - 'No Enema'  Azadi Records.mp3","./Seedhe Maut - Namastute.mp3"]
 let audioIndex = 0;
 let audioPlaying = false;
+let lunchbreak = document.querySelector('#lunchbreak-page')
+let nayaab = document.querySelector('#nayaab-page')
+let n = document.querySelector('#n-page')
+let bayaan = document.querySelector('#bayaan-page')
+let lunchbreakbtn = document.querySelectorAll('.lb-btn')
+let nayaabbtn = document.querySelector('#nayaab-btn')
+let nbtn = document.querySelector('#n-btn')
+let bayaanbtn = document.querySelector('#bayaan-btn')
     
     let playing;
 
@@ -42,7 +47,7 @@ let audioPlaying = false;
     videocontainer.addEventListener("mousemove", function (dets) {
         gsap.to(playbtn, {
             left: dets.x - 23,
-            top: dets.y - 20
+            top: dets.y -20
         });
     });
 
@@ -60,3 +65,26 @@ let audioPlaying = false;
             sequentialplaying();
         });
     });
+
+    // lunchbreakbtn.addEventListener("click",function(){
+    //     lunchbreak.scrollIntoView({behavior:"smooth"})
+    // })
+    document.getElementById('lb-btn').addEventListener("click", function() {
+        lunchbreak.scrollIntoView({ behavior: "smooth" });
+    });
+    
+    document.getElementById('nayaab-btn').addEventListener("click", function() {
+        // Assuming "nayaab" is your target element
+        nayaab.scrollIntoView({ behavior: "smooth" });
+    });
+    
+    document.getElementById('n-btn').addEventListener("click", function() {
+        // Assuming "n" is your target element
+        n.scrollIntoView({ behavior: "smooth" });
+    });
+    
+    document.getElementById('bayaan-btn').addEventListener("click", function() {
+        // Assuming "bayaan" is your target element
+        bayaan.scrollIntoView({ behavior: "smooth" });
+    });
+    
