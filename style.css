@@ -34,7 +34,6 @@ html, body {
 
 #page1 {
     min-height: 100vh;
-    width: 100%;
     background-color: #141414;
     position: relative;
     padding: 0 2vw;
@@ -63,9 +62,10 @@ nav {
     color: #000000bb;
     transition: all ease 0.4s;
     position: relative;
-    font-size: 18px;
+    font-size: 2vw;
     overflow: hidden;
     cursor: pointer;
+    text-align: center;
 }
 
 #nav-part2 h4::after {
@@ -158,8 +158,7 @@ video{
     padding-bottom: 20px;
     margin-bottom: 0px;
 }
-.con h1{
-    font-size: 20vh;
+.con h1{    font-size: 8vw;
     color: #969696;
     transition: .5s;
 
@@ -278,7 +277,7 @@ video{
 #about{
     margin-top: 50vh;
     color: #ffffff;
-    font-size: 6vh;
+    font-size: 3vw;
     margin-bottom: 300px;
     width: 50%;
     line-height: 5vh;
@@ -289,7 +288,6 @@ video{
 .creator{
     height: 100%;
     width: 35%;
-    /* background-color: #DB1C1F; */
 }
 #imgco{
     height: 70%;
@@ -308,7 +306,7 @@ video{
     text-align: center;
 }
 #page3{
-    min-height: 100vh;
+    min-height: 40vh;
     width: 100%;
     background-color: #DB1C1F;
     padding: 20px;
@@ -381,7 +379,7 @@ video{
     padding-top: 2px;
 }
 .question:hover #socials{
-    font-size: 12vh;
+    font-size: 5.8vw;
     font-weight: 500;
     padding-top: 2px;
     gap: 5vh;
@@ -430,32 +428,32 @@ video{
     width: 50vw;
 }
 #lunchbreak{
-    font-size: 20vh;
+    font-size: 10vw;
     color: transparent;
     background: linear-gradient(to right,#0066ff, rgb(0, 221, 255) );
     -webkit-background-clip: text;
 }
 #nayaab{
-    font-size: 20vh;
+    font-size: 10vw;
     color: transparent;
     background: linear-gradient(to right,#74a0e1, rgb(0, 221, 255) );
     -webkit-background-clip: text;
 }
 #n{
-    font-size: 20vh;
+    font-size: 10vw;
     color: transparent;
     background: linear-gradient(to right,#84ff00, rgb(127, 186, 0) );
     -webkit-background-clip: text;
 }
 #bayaan{
-    font-size: 20vh;
+    font-size: 10vw;
     color: transparent;
     background: linear-gradient(to right,red,orangered );
     -webkit-background-clip: text;
 }
 
 .album-left p{
-    font-size: 5vh;
+    font-size: 2vw;
     color: #ffffff7e;
     padding-top: 40px;
 }
@@ -573,3 +571,143 @@ video{
     position: fixed;
     width: 100%;
 }
+.responisve-footer-wrapper{
+    display: none;
+}
+ #responsive-left{
+    display: none;
+}
+#page2-responsive{
+    display: none;
+} 
+@media only screen and (max-width: 700px) {
+    *{overflow-x: hidden;}
+    .footer-wrapper{
+        display: none;
+    }
+    #page4{
+        display: none;
+    }
+    #page3{
+        min-height: 30vh;
+    }
+    #imgco img{
+        padding: 0px;
+    }
+    #left{
+        display: none;
+    }
+    #center{
+        display: block;
+    }
+    #center h1{
+        padding: 20px;
+        text-align: left;
+        font-size: 20vw;
+        line-height: 10vh;
+    }
+    #responsive-left{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #responsive-left a{
+        text-decoration: none;
+        color: #969696;
+    }
+    .con h1{
+        font-size: 26vw;
+    }
+    #center{
+        height: 67vh;
+        padding-bottom: 0px;
+    }
+    #hero{
+        display: none;
+    }
+    #hero2{
+        display: none;
+    }
+    #about-creator{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        overflow-y: hidden;
+        position: relative;
+    }
+    #about{
+        width: 100vw;
+        text-align: left;
+        font-size: 3.8vw;
+        padding: 0;
+        color: #969696;
+        height: 40%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    .creator{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .creator img{
+        padding: 20px;
+    }
+    .creator h6{
+        display: none;
+    }
+    #page3{
+        height: 70vh;
+    }
+    .question{
+        height: 8vh;
+    }
+    #head{
+        height: 10vh;
+        border: 2px solid;
+    }
+    #socials{
+        display: block;
+    }
+
+    #small{
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    #head:hover{
+        border: #DB1C1F;
+        background-color: #141414;
+    }
+    #head:hover #small{
+        font-size: 11vw;
+        padding-top: 15px;
+    }
+    #big{
+        display: none;
+    }
+    .album-left{
+        width: 90vw;
+    }
+    .album-left p{
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    .album-page{
+        display: block;
+        min-height: 20vh;
+        height: 70vh;
+        overflow: hidden;
+    }
+    .album-right{
+        width: 90vw;
+    }
+    .album-right iframe{
+        padding: 0px;
+        height: 50%;
+    }
+
+  }

@@ -83,4 +83,8 @@ let bayaanbtn = document.querySelector('#bayaan-btn')
 
         bayaan.scrollIntoView({ behavior: "smooth" });
     });
-    
+    // locomotive smooth scroll
+    // const scroll = new LocomotiveScroll({
+    //     el: document.querySelector('#main'),
+    //     smooth: true
+    // });
